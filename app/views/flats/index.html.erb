@@ -1,0 +1,25 @@
+<div class="container mt-46">
+  <h1 class="pt-5 mb-5">All our flats(<%= @flats.size %>)</h1>
+  <div class="row">
+    <% @flats.each do |flat| %>
+      <div class="col-4 mb-3">
+        <div class="card h-100">
+          <div class="flat-card-image" style="background-image: url('https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200')"></div>
+          <div class="card-body">
+            <h5 class="card-title"><%= flat.name %></h5>
+            <p class="card-text"><%= flat.address %></p>
+          </div>
+          <ul class="card-flat-list-detail d-flex">
+            <li><i class="fa-solid fa-user-group"></i><%= flat.number_of_guests %></li>
+            <li><i class="fa-solid fa-euro-sign"></i><%= flat.price_per_night %></li>
+          </ul>
+          <div class="card-footer d-flex justify-content-between">
+            <%= link_to "More info", flat_path(flat), class: "lf link-flat-detail" %>
+            <%= link_to "Edit", edit_flat_path(flat), class: "lf link-flat-edit" %>
+            <%= link_to "Remove", flat_path(flat), method: :delete, class: "lf link-flat-delete" %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,70 @@
+// Place all the styles related to the flats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.card-flat-list-detail {
+  list-style: none;
+  padding-left: 21px;
+}
+
+.card-flat-list-detail i {
+  margin-right: 6px;
+}
+
+.card-flat-list-detail li {
+  margin-right: 18px
+}
+
+.link-flat-detail {
+  text-decoration: none;
+  color: blue;
+}
+
+.link-flat-delete:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.link-flat-edit {
+  text-decoration: none;
+  color: yellow;
+}
+
+.link-flat-delete:hover {
+  text-decoration: underline;
+  color: yellow;
+}
+
+.link-flat-delete {
+  text-decoration: none;
+  color: red;
+}
+
+.link-flat-delete:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+.map {
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+}
+
+.flat-show-card {
+  background: #F8F9FA;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.margin-top-negative {
+  margin-top: -75px;
+}
+
+.flat-card-image {
+  height: 180px;
+  background-position: center;
+  background-size: cover;
+}
